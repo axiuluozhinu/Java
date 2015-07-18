@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">百乐淘</string>
+<string name="hello">Hello World, LoginActivity!</string>
+    <string name="login_label_username">帐号</string>
+    <string name="login_label_password">密码</string>
+    <string name="login_label_signin">登   陆</string>
+    <string name="register_label_signin">注   册</string>
+    <string name="login_status_logging_in">登录中...</string>
+    <string name="login_username_hint">不超过15个字符，可使用任意字符</string>
+    <string name="register_password_hint">请输入密码</string>
+    <string name="register_password2_hint">请再次输入密码</string>
+    <string name="register_phonenumber_hint">请输入手机号码</string>
+    <string name="login_register_link">没有帐号？ <a href="#">注册</a></string>
+    
+    <string name="seller_register_storename_hint">请输入商店名称</string>
+    <string name="seller_register_storetype_hint">请输入商店类型</string>
+    <string name="seller_register_storeapproval_hint">请输入商店认证</string>
+    <string name="seller_register_province_hint">请输入商店所在省</string>
+    <string name="seller_register_city_hint">请输入商店所在市或县</string>
+    <string name="seller_register_town_hint">请输入商店所在区或镇</string>
+    <string name="seller_register_address_hint">请输入商店详细地址</string>
+    
+    <string name="seller_up_shop_goodsname_hint">请输入商品名称</string>
+    <string name="seller_up_shop_brand_hint">请输入商品品牌</string>
+    <string name="seller_up_shop_type_hint">请输入商品类型</string>
+     <string name="seller_up_shop_model_hint">请输入商品型号</string>
+    <string name="seller_up_shop_unit_hint">请输入商品单价</string>
+    <string name="seller_up_shop_material_hint">请输入材质</string>
+    <string name="seller_up_shop_color_hint">请输入商品颜色</string>
+    
+    
+  
+   
+
+</resources>

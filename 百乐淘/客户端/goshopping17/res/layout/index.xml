@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 首页 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+      android:background="#FFFFFF"
+    android:orientation="vertical"  >
+     <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:orientation="vertical" >
+ <!-- 标题 -->   
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="3.1" >
+                <include android:id="@+id/title" layout="@layout/title" />
+        </LinearLayout>
+ <!-- 搜索 -->
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_marginTop="1dp"
+             android:layout_weight="2.95" 
+             android:gravity="center"
+             android:orientation="horizontal" 
+             android:padding="8dp" 
+             android:background="@drawable/index_search_bg">
+
+            <EditText
+                android:id="@+id/find" 
+                android:layout_weight="1" 
+                android:drawableLeft="@drawable/index_search_left" 
+                android:maxLength="10" 
+                android:padding="5dp"  
+                android:hint="请输入您要搜索的物品" 
+                android:background="@drawable/index_search_bg2" 
+                android:layout_width="wrap_content" 
+                android:layout_height="36dp"/>
+		<ImageView 
+		       android:scaleType="fitXY" 
+		       android:id="@+id/imageView1" 
+		       android:layout_toRightOf="@id/find"
+		       android:src="@drawable/index_search_bt" 
+		       android:layout_width="55dp"
+		      android:layout_height="36dp"/>
+        </LinearLayout>
+<!-- 内容--> 
+<ScrollView  android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_marginTop="1dp"
+             android:orientation="vertical"
+             android:layout_weight="1"
+             android:background="#000000">
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_marginTop="1dp"
+             android:orientation="vertical"
+             android:layout_weight="1">
+ <!-- 滚动活动栏 -->
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="100dp"   >
+           <Gallery
+                 android:id="@+id/gallery1"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent" />
+        </LinearLayout>
+ <!-- 4类 -->
+         <LinearLayout             
+             android:layout_width="fill_parent"
+             android:layout_height="110dp"
+              android:layout_marginBottom="1dp" 
+              android:layout_marginTop="2dp">  
+              <LinearLayout             
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+                android:layout_weight="1"
+                    android:id="@+id/linear1" >"
+                <ImageView
+              
+                   android:background="@drawable/clothes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.1"                 
+                    android:layout_marginLeft="2dp"/> 
+                  <TextView 
+                    android:background="#FFDAB9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.1"
+                    android:layout_marginRight="2dp" 
+                    android:text="时尚服装"
+                    android:textSize="10dip"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+         </LinearLayout>  
+              <LinearLayout             
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+                android:layout_weight="1"
+                  android:id="@+id/linear2"> 
+                  <ImageView
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_weight="1"
+                      android:background="@drawable/cosmetic"></ImageView>"
+
+                <TextView 
+                    android:background="#FFFFFF"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                     android:text="  名牌化妆品"
+                    android:textSize="10dip"
+                    android:textColor="#000000"
+                    android:gravity="center"/> 
+         </LinearLayout> 
+           </LinearLayout> 
+         <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="110dp"
+             android:layout_marginBottom="1dp"
+             android:layout_marginTop="2dp">  
+                 <LinearLayout             
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+                android:layout_weight="1"
+                  android:id="@+id/linear3" > 
+              <ImageView
+                 
+                   android:background="@drawable/digital"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"                   
+                    android:layout_marginLeft="1dp"/> 
+                  <TextView 
+                    android:background="#FFFFFF"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                     android:text="数码电子"
+                    android:textSize="10dip"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+      </LinearLayout> 
+      <LinearLayout             
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+                android:layout_weight="1"
+                 android:id="@+id/linear4"> 
+                  <ImageView
+                    
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_weight="1.1"
+                      android:background="@drawable/foods" />
+
+                <TextView 
+                    android:background="#FFDAB9"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_weight="1.1"
+                    android:layout_marginRight="2dp"
+                     android:text="水果佳肴"
+                    android:textSize="10dip"
+                    android:textColor="#000000"
+                    android:gravity="center" />  
+        </LinearLayout>    </LinearLayout>
+ <!-- 热销 -->         
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="250dp"
+             android:orientation="vertical" >                
+              <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="80dp"
+              android:layout_marginBottom="1dp" 
+              android:layout_marginTop="2dp">  
+                <ImageView 
+                   android:id="@+id/imageView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"                
+                    android:layout_marginLeft="2dp"
+                      android:background="#FFDAB9"/> 
+                  <TextView 
+                    android:id="@+id/goodsname2"
+                    android:background="#FFDAB9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp" 
+                    android:text="加载中...."
+                    android:textSize="10dip"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+
+                  <ImageView
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_weight="1"
+                      android:id="@+id/imageView3"
+                        android:background="#98FB98"></ImageView>"
+
+                <TextView 
+                    android:id="@+id/goodsname3"
+                    android:background="#EE9A00"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:text="加载中...."
+                    android:textSize="10dip"
+                    android:textColor="#000000"
+                    android:gravity="center"/> 
+         </LinearLayout> 
+         <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="80dp"
+             android:layout_marginBottom="1dp"
+             android:layout_marginTop="2dp">  
+             
+                  <TextView 
+                      android:id="@+id/goodsname4"
+                    android:background="#C0C0C0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:text="加载中...."
+                    android:textSize="10dip"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+                  
+                   <ImageView 
+                   android:id="@+id/imageView4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"                   
+                    android:layout_marginRight="2dp"
+                     android:background="#C0C0C0"/> 
+
+                <TextView 
+                    android:id="@+id/goodsname5"
+                    android:background="#98FB98"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_weight="1"                   
+                    android:text="加载中...."
+                    android:textSize="10dip"
+                    android:textColor="#000000"
+                    android:gravity="center" />  
+                    
+                 <ImageView
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_weight="1"
+                      android:id="@+id/imageView5" 
+                      android:background="#98FB98"
+                       android:layout_marginRight="2dp"/>
+                
+         </LinearLayout>
+          <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="80dp"
+             android:layout_marginBottom="1dp"
+             android:layout_marginTop="2dp"> 
+             
+               <ImageView 
+                   android:id="@+id/imageView6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"                                
+                    android:background="#FFDAB9"
+                     android:layout_marginLeft="1dp"/>
+              
+                  <TextView
+                      android:id="@+id/goodsname6" 
+                    android:background="#FFDAB9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                     android:text="加载中...."
+                    android:textSize="10dip"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+                  
+                  
+
+                  <ImageView
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_weight="1"
+                      android:id="@+id/imageView7"
+                      android:background="#FFC0CB"
+                       android:layout_marginLeft="1dp" />
+
+                <TextView
+                    android:id="@+id/goodsname7" 
+                    android:background="#FFC0CB"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_weight="1.1"
+                    android:layout_marginRight="1dp"
+                    android:text="加载中...."
+                    android:textSize="10dip"
+                    android:textColor="#000000"
+                    android:gravity="center" />  
+         </LinearLayout>
+        </LinearLayout>  
+        </LinearLayout>   
+      </ScrollView>
+<!-- 菜单 -->
+   <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"             
+             android:layout_weight="3" >
+           <include android:id="@+id/under" layout="@layout/under" />
+   </LinearLayout>  
+</LinearLayout>
+</LinearLayout>

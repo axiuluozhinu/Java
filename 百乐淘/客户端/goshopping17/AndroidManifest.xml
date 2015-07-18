@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.bzu.main"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.edu.bzu.personal.ActNews" >
+        </activity>
+        <activity android:name="cn.edu.bzu.personal.News" >
+        </activity>
+        <activity android:name="cn.edu.bzu.personal.LeaveWord" >
+        </activity>
+        <activity android:name="cn.edu.bzu.personal.Sysnews" >
+        </activity>
+        <activity android:name="cn.edu.bzu.personal.Personal" >
+        </activity>
+        <activity android:name="cn.edu.bzu.personal.About_me" >
+        </activity>
+        <activity android:name="cn.edu.bzu.personal.About_me_alter" >
+        </activity>
+        <activity android:name="cn.edu.bzu.personal.Reserve" >
+        </activity>
+        <activity android:name="cn.edu.bzu.personal.Part" >
+        </activity>
+        <activity android:name="cn.edu.bzu.personal.Discuss" >
+        </activity>
+        <activity android:name="cn.edu.bzu.personal.Write_leaveword" >
+        </activity>
+        <activity android:name="cn.edu.bzu.personal.PublishActive" >
+        </activity>
+        <activity android:name="cn.edu.bzu.personal.MyPublishActive" >
+        </activity>
+        <activity android:name="cn.edu.bzu.shop.Goods_Rank_Show" >
+        </activity>
+        <activity android:name="cn.edu.bzu.shop.ShopActive" >
+        </activity>
+        <activity android:name="cn.edu.bzu.shop.ShopInformation" >
+        </activity>
+        <activity android:name="cn.edu.bzu.shop.Stores_Map_Show" >
+        </activity>
+        <activity android:name="cn.edu.bzu.shop.GoodsIntroduce" >
+        </activity>
+        <activity android:name="cn.edu.bzu.shop.Goods_Type_Show" >
+        </activity>
+        <activity android:name="cn.edu.bzu.friends.Chat" >
+        </activity>
+        <activity android:name="cn.edu.bzu.friends.Share" >
+        </activity>
+        <activity android:name="cn.edu.bzu.friends.AddFriends" >
+        </activity>
+        <activity android:name="cn.edu.bzu.friends.FriendList" >
+        </activity>
+        <activity android:name="cn.edu.bzu.friends.Friendsinformation" >
+        </activity>
+        <activity android:name="cn.edu.bzu.friends.FriendsSharelist" >
+        </activity>
+        <activity android:name="cn.edu.bzu.friends.FriendsActiveList" >
+        </activity>
+        <activity android:name="cn.edu.bzu.friends.FriendsPart" >
+        </activity>
+        <activity android:name="cn.edu.bzu.friends.ChatRoom" >
+        </activity>
+        <activity android:name="cn.edu.bzu.map.Maps" >
+        </activity>
+        <activity android:name="cn.edu.bzu.map.Maps_location" >
+        </activity>
+        <activity android:name="cn.edu.bzu.map.Map_register" >
+        </activity>
+        <activity android:name="cn.edu.bzu.map.Map_register1" >
+        </activity>
+        <activity android:name="cn.edu.bzu.map.GetOverlay" >
+        </activity>
+        <activity android:name="cn.edu.bzu.map.Aaa" >
+        </activity>
+        <activity android:name="cn.edu.bzu.map.Map_Driver" >
+        </activity>
+        <activity android:name="cn.edu.bzu.activity.ActivityShow" >
+        </activity>
+        <activity android:name="cn.edu.bzu.activity.AmendActive" >
+        </activity>
+        <activity android:name="cn.edu.bzu.activity.CancelBusinessActivity" >
+        </activity>
+        <activity android:name="cn.edu.bzu.activity.CancelClientActivity" >
+        </activity>
+        <activity
+            android:name=".Index"
+            android:windowSoftInputMode="stateUnchanged|adjustPan" >
+        </activity>
+        <activity android:name=".StoresType" >
+        </activity>
+        <activity android:name=".StoresName" >
+        </activity>
+        <activity android:name=".Activitys" >
+        </activity>
+        <activity android:name=".More" >
+        </activity>
+        <activity android:name=".Type" >
+        </activity>
+        <activity android:name=".ConsumerLogin" >
+        </activity>
+        <activity android:name=".BusinessLogin" >
+        </activity>
+        <activity android:name=".ConsumerRegister" >
+        </activity>
+        <activity android:name=".BusinessRegister" >
+        </activity>
+        <activity android:name=".SysApplication" >
+        </activity>
+        <activity android:name="cn.edu.bzu.seller.Seller" >
+        </activity>
+        <activity android:name="cn.edu.bzu.seller.Seller_register" >
+        </activity>
+        <activity android:name="cn.edu.bzu.seller.Up_seller" >
+        </activity>
+        <activity android:name="cn.edu.bzu.seller.Seller_Show" >
+        </activity>
+        <activity android:name="cn.edu.bzu.seller.SellGoodsIntroduce" >
+        </activity>
+        <activity android:name="cn.edu.bzu.seller.SellerPublishActive" >
+        </activity>
+        <activity android:name="cn.edu.bzu.seller.SellerViewScheduledClient" >
+        </activity>
+         <activity android:name="cn.edu.bzu.seller.ClientScheduledGoods" >
+        </activity>
+    </application>
+
+</manifest>

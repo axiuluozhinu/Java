@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFB90F" >
+ <!-- 标题 -->    
+    <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1.9" >
+                <include android:id="@+id/title" layout="@layout/title" />
+     </LinearLayout>
+<!-- 信息 -->     
+    <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="0.5" 
+             android:orientation="vertical"
+             android:gravity="center_horizontal">
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_weight="1.1" 
+              >    </LinearLayout>
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_weight="1" 
+              >
+               <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                  
+                   android:text="商店名称："
+                   android:textSize="15sp" 
+                   android:textColor="#090909"                   
+                    android:gravity="center"
+                    />
+               <EditText
+                 
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp"     
+                   android:id="@+id/EditText1"
+                   android:hint="@string/seller_register_storename_hint"
+                   />
+           </LinearLayout>
+ <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+                 <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                 
+                   android:text="商店类别："
+                   android:textSize="15sp" 
+                   android:textColor="#090909"
+                   android:gravity="center"/>
+               <EditText
+                
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp"
+                   android:id="@+id/EditText2"
+                   android:hint="@string/seller_register_storetype_hint" />             
+        </LinearLayout> 
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+                 <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                   
+                   android:text="商店认证："
+                   android:textSize="15sp" 
+                   android:textColor="#090909" 
+                   android:gravity="center"/>
+               <EditText
+              
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp"
+                   android:id="@+id/EditText3"
+                    android:hint="@string/seller_register_storeapproval_hint"/>
+               
+        </LinearLayout> <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+                 <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"               
+                   android:text="所属省份："
+                   android:textSize="15sp" 
+                   android:textColor="#090909"
+                   android:gravity="center"/>
+               <EditText
+              
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp"
+                   android:id="@+id/EditText4"
+                    android:hint="@string/seller_register_province_hint" />
+               
+        </LinearLayout> <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+                 <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"               
+                   android:text="所属市县："
+                   android:textSize="15sp" 
+                   android:textColor="#090909"
+                   android:gravity="center"
+                   />
+               <EditText 
+                 
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp"
+                   android:id="@+id/EditText5" 
+                   android:hint="@string/seller_register_city_hint"/>
+               
+        </LinearLayout> <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+                 <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"               
+                   android:text="所属区镇："
+                   android:textSize="15sp" 
+                   android:textColor="#090909"
+                   android:gravity="center"
+                   />
+               <EditText
+                 
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp"
+                   android:id="@+id/EditText6"
+                    android:hint="@string/seller_register_town_hint" />
+               
+        </LinearLayout> <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+               <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"
+                   android:text="详细地址："
+                   android:textSize="15sp" 
+                   android:textColor="#090909"
+                   android:gravity="center"
+                    />
+               <EditText
+                 
+                    android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp" 
+                   android:id="@+id/EditText7"
+                    android:hint="@string/seller_register_address_hint"/>
+        </LinearLayout> 
+        </LinearLayout>
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1.9" >
+              <Button 
+                  android:id="@+id/btn1"
+                  android:layout_width="96dp"
+                  android:layout_height="27dp"
+                  android:text="下 一 步"
+                  android:textColor="#ffffff"
+                  android:layout_marginLeft="200dp"
+                  android:background="@drawable/bt_red" />  
+                  </LinearLayout>
+ <!-- 菜单 -->          
+     <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1.82" >
+ <include android:id="@+id/under" layout="@layout/under" />       </LinearLayout>
+</LinearLayout>

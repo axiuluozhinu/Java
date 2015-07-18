@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#FFB90F">
+ <!-- 标题 -->   
+   <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="2" >
+                <include android:id="@+id/title" layout="@layout/title" />
+   </LinearLayout>
+<!-- 信息 -->   
+   <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="0.4" 
+           android:orientation="vertical"
+           android:gravity="center_horizontal">
+     
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1.05" >
+       
+           </LinearLayout>
+      <!--  <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1" >
+           <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"               
+                android:text="用户名："
+                android:textColor="#090909"
+                android:textSize="20sp"
+                android:gravity="right" />
+           <EditText 
+                android:id="@+id/text1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"                   
+                android:textSize="15sp"     
+                android:hint="请输入用户名"/>
+           </LinearLayout> -->
+           <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+                 <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                  
+                   android:text="活动主题："
+                   android:textColor="#090909"
+                   android:textSize="15sp" 
+                    android:gravity="right" />
+               <EditText 
+                   android:id="@+id/text2"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp"
+                   android:hint="请输入活动主题" />             
+        </LinearLayout> 
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+                 <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                  
+                   android:text="活动地点："
+                   android:textColor="#090909"
+                   android:textSize="15sp"
+                    android:gravity="right"  />
+               <EditText 
+                   android:id="@+id/text3"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp"
+                   android:hint="请输入活动地点" />
+               
+        </LinearLayout>
+         <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+                 <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                   
+                   android:text="活动内容："
+                   android:textColor="#090909"
+                   android:textSize="15sp" 
+                    android:gravity="right" />
+               <EditText 
+                  android:id="@+id/text4"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1"                   
+                  android:textSize="15sp"
+                  android:hint="请输入活动内容"  />
+               
+        </LinearLayout> 
+       <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+                 <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                  
+                   android:text="开始时间："
+                   android:textColor="#090909"
+                   android:textSize="15sp" 
+                    android:gravity="right" 
+                   />
+               <EditText 
+                   android:id="@+id/text5"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp"
+                   android:hint="请输入开始时间" />
+               
+        </LinearLayout>
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+               <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                   
+                   android:text="结束时间："
+                   android:textColor="#090909"
+                   android:textSize="15sp" 
+                    android:gravity="right" />
+               <EditText 
+                   android:id="@+id/text6"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp" 
+                   android:hint="请输入结束时间"/>
+        </LinearLayout>
+     
+
+<LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+              <Button 
+                  android:id="@+id/Btn1"
+                  android:layout_width="100dp"
+                  android:layout_height="35dp"
+                  android:text="发 起 活 动"
+                  android:textColor="#ffffff"
+                  android:layout_marginLeft="200dp"
+                  android:background="@drawable/bt_red"  />          
+</LinearLayout>
+ </LinearLayout>
+ <!-- 菜单 -->
+<LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1.95" >
+ <include android:id="@+id/under" layout="@layout/under" />       
+</LinearLayout>
+</LinearLayout>

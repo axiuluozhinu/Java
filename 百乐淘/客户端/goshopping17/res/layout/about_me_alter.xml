@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#FFB90F">
+ <!-- 标题 -->   
+   <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="2" >
+                <include android:id="@+id/title" layout="@layout/title" />
+   </LinearLayout>
+<!-- 信息 -->   
+   <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="0.4" 
+           android:orientation="vertical"
+           android:gravity="center_horizontal">
+     
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1.05" >
+       
+           </LinearLayout>
+      <!--  <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1" >
+           <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"               
+                android:text="用户名："
+                android:textColor="#090909"
+                android:textSize="20sp"
+                android:gravity="right" />
+           <EditText 
+                android:id="@+id/text1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"                   
+                android:textSize="15sp"     
+                android:hint="请输入用户名"/>
+           </LinearLayout> -->
+           <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+                 <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                  
+                   android:text="姓名："
+                   android:textColor="#090909"
+                   android:textSize="20sp" 
+                    android:gravity="right" />
+               <EditText 
+                   android:id="@+id/text2"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp"
+                   android:hint="请输入姓名" />             
+        </LinearLayout> 
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+                 <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                  
+                   android:text="性别："
+                   android:textColor="#090909"
+                   android:textSize="20sp"
+                    android:gravity="right"  />
+               <EditText 
+                   android:id="@+id/text3"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp"
+                   android:hint="请输入性别男或女" />
+               
+        </LinearLayout>
+         <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+                 <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                   
+                   android:text="年龄："
+                   android:textColor="#090909"
+                   android:textSize="20sp" 
+                    android:gravity="right" />
+               <EditText 
+                  android:id="@+id/text4"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1"                   
+                  android:textSize="15sp"
+                  android:hint="请输入年龄"  />
+               
+        </LinearLayout> 
+       <!--  <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+                 <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                  
+                   android:text="密码："
+                   android:textColor="#090909"
+                   android:textSize="20sp" 
+                    android:gravity="right" 
+                   />
+               <EditText 
+                   android:id="@+id/text5"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp"
+                   android:hint="请输入密码" />
+               
+        </LinearLayout> --> 
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+               <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                   
+                   android:text="手机号："
+                   android:textColor="#090909"
+                   android:textSize="20sp" 
+                    android:gravity="right" />
+               <EditText 
+                   android:id="@+id/text6"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp" 
+                   android:hint="请输入手机号"/>
+        </LinearLayout>
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >                
+                <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="3"                
+                   android:text="地址："
+                   android:textSize="20sp" 
+                  	android:textColor="#090909"
+                  	 android:gravity="right" />
+               <EditText 
+                   android:id="@+id/text8"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"                   
+                   android:textSize="15sp"
+                   android:hint="请输入地址" />
+       </LinearLayout>                     
+
+<LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1" >
+              <Button 
+                  android:id="@+id/Btn1"
+                  android:text="确   定"
+                  android:layout_width="96dp"
+                  android:layout_height="27dp"                  
+                  android:layout_marginLeft="200dp"
+                  android:textColor="#ffffff"
+                  android:background="@drawable/bt_red"/>          
+</LinearLayout>
+ </LinearLayout>
+ <!-- 菜单 -->
+<LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1.95" >
+ <include android:id="@+id/under" layout="@layout/under" />       
+</LinearLayout>
+</LinearLayout>

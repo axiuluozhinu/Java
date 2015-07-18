@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xfire.codehaus.org/config/1.0">
+
+	<service>
+		<name>WebServices</name>
+		<serviceClass>cn.edu.bzu.pox.IWebServices</serviceClass>
+		<implementationClass>
+			cn.edu.bzu.pox.WebServicesImpl
+		</implementationClass>
+		<style>wrapped</style>
+		<use>literal</use>
+		<scope>application</scope>
+	</service></beans>

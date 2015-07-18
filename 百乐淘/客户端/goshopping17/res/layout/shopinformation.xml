@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFB90F" >
+<!--标题 -->   
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1.55" >
+       <include android:id="@+id/title"  layout="@layout/title" />
+  </LinearLayout> 
+   <!-- 信息 -->
+   <!-- 商品信息 -->   
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="151dp"
+         android:orientation="vertical" >
+   
+<!-- 商品名称 -->		    
+			<LinearLayout 
+			        android:orientation="horizontal"
+					android:paddingLeft="10dip" 
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:layout_marginTop="15dip">
+					<TextView android:layout_width="75dip"
+						android:layout_height="wrap_content"
+					    android:textSize="15sp"
+                       	android:gravity="right"
+                        android:text="商店名称："
+                       	android:textColor="#090909" />
+					<TextView 
+					    android:id="@+id/value_storesname"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:gravity="left" 
+						android:textSize="15sp"
+						android:textColor="#090909"/>
+		    </LinearLayout>
+		    <ImageView android:id="@+id/gallery_line"
+					android:background="#000000" 
+					android:layout_height="1dip"
+					android:layout_width="fill_parent"
+					 />
+<!-- 商店类型 -->		    
+			<LinearLayout 
+			        android:orientation="horizontal"
+					android:paddingLeft="10dip" 
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:layout_marginTop="15dip">
+					<TextView 
+					    android:layout_width="75dip"
+						android:layout_height="wrap_content" 
+						android:textSize="15sp"				
+						android:gravity="right" 
+						android:text="商店类型：" 
+						android:textColor="#090909"/>
+					<TextView 
+					    android:id="@+id/value_storestype"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"					
+						android:gravity="left"
+						android:textSize="15sp"
+						android:textColor="#090909" />
+			</LinearLayout>
+				    <ImageView android:id="@+id/gallery_line"
+					android:background="#000000" 
+					android:layout_height="1dip"
+					android:layout_width="fill_parent"
+					 />
+<!-- 联系方式 -->			
+			<LinearLayout 
+			        android:orientation="horizontal"
+					android:paddingLeft="10dip" 
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:layout_marginTop="15dip">
+					<TextView 
+					    android:layout_width="75dip"
+						android:layout_height="wrap_content" 
+						android:textSize="15sp"				
+						android:gravity="right" 
+						android:text="联系方式："
+						android:textColor="#090909" />
+					<TextView 
+					    android:id="@+id/value_storesphone"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"					
+						android:gravity="left"
+						android:textSize="15sp"
+						android:textColor="#090909" />
+			</LinearLayout>
+				    <ImageView android:id="@+id/gallery_line"
+					android:background="#000000" 
+					android:layout_height="1dip"
+					android:layout_width="fill_parent"
+					 />
+<!-- 商店位置 -->			
+			<LinearLayout 
+			        android:orientation="horizontal"
+					android:paddingLeft="10dip" 
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:layout_marginTop="15dip">
+					<TextView 
+					    android:layout_width="75dip"
+						android:layout_height="wrap_content" 
+						android:textSize="15sp"
+						android:gravity="right" 
+						android:text="商店位置："
+						android:textColor="#090909" />
+					<TextView 
+					    android:id="@+id/value_storesaddress"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:gravity="left"
+						android:textSize="15sp"
+						android:textColor="#090909" />
+			</LinearLayout>
+    </LinearLayout>  
+   <!-- 评论 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.9" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+      
+             
+        <ListView
+             android:id="@id/android:list" 
+             android:layout_width="fill_parent"
+	         android:layout_height="fill_parent"
+             android:cacheColorHint="#00000000" 
+             android:scrollbars="none">
+        </ListView>
+        
+	
+    </LinearLayout>
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="4" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bt_red"
+                android:text="我 要 评 价" 
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="好   评"
+                android:textColor="#ffffff"
+                 android:background="@drawable/bt_red" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bt_red"
+                android:text="差   评"
+                android:textColor="#ffffff" />
+            
+        </RelativeLayout>
+    </LinearLayout> 
+ <!-- 菜单 -->
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1.5" >
+
+              <include
+                  android:id="@+id/under"
+                  android:layout_height="wrap_content"
+                  layout="@layout/under" />
+
+</LinearLayout>   
+
+</LinearLayout>

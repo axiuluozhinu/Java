@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 地图 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFB90F">
+<!-- 主题 -->	
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="3.15">
+     <include android:id="@+id/title" layout="@layout/title" />
+</LinearLayout>
+<!-- 地图层 -->
+<LinearLayout 
+    android:id="@+id/view1"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="0.9">
+     <com.baidu.mapapi.MapView 
+        android:id="@+id/bmapsView"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:clickable="true" />
+</LinearLayout>
+<LinearLayout
+  
+	android:layout_weight="3.2"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+         <TextView
+         android:id="@+id/menu_desc"
+         android:layout_width="230dip"
+         android:layout_height="wrap_content"
+         android:text="  请点击店铺位置，获取经纬度!"
+         android:textSize="15dp"
+       android:textColor="#000000"
+        />
+           <Button 
+                  android:id="@+id/btn1"
+                  android:layout_width="80dp"
+                  android:layout_height="fill_parent"
+                  android:text="查   看" 
+                  android:textColor="#ffffff"
+                  android:layout_marginLeft="5dp"               
+                 android:background="@drawable/bt_red" />
+    
+</LinearLayout>
+<!-- 菜单 -->
+<LinearLayout
+	android:layout_weight="3.05"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	  <include android:id="@+id/under" layout="@layout/under" />  
+</LinearLayout>	
+</LinearLayout>
